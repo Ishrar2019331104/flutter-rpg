@@ -41,6 +41,25 @@ class _CreateState extends State<Create> {
   void handleSubmit() {
     if (_nameController.text.trim().isEmpty) {
       // show error dialog
+
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: const StyledHeading(text: 'Missing character name'),
+              content: const StyledText(
+                  text: 'Please enter a name for your character.'),
+              actions: [
+                StyledButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const StyledHeading(text: 'close'))
+              ],
+              actionsAlignment: MainAxisAlignment.center,
+            );
+          });
+
       return;
     }
     if (_sloganController.text.trim().isEmpty) {

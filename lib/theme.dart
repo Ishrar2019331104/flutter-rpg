@@ -60,6 +60,12 @@ ThemeData primaryTheme = ThemeData(
       border: InputBorder.none,
     ),
 
+    // dialog theme
+
+    dialogTheme: DialogTheme(
+        backgroundColor: AppColors.secondaryColor,
+        surfaceTintColor: Colors.transparent),
+
     // card theme
 
     cardTheme: CardTheme(
@@ -68,3 +74,7 @@ ThemeData primaryTheme = ThemeData(
         surfaceTintColor: Colors.transparent,
         shadowColor: Colors.transparent,
         margin: const EdgeInsets.only(bottom: 16.0)));
+    
+    // dialog theme
+
+    
