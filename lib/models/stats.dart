@@ -35,6 +35,7 @@ mixin Stat {
       if (stat == 'stat') {
         _skill++;
       }
+      _points--;
     }
   }
 
