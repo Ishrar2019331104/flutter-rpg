@@ -22,6 +22,7 @@ class CharacterCard extends StatelessWidget {
               ),
               const SizedBox(width: 20.0),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   StyledHeading(text: character.name),
                   StyledText(

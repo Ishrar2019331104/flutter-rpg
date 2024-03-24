@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/screens/profile/skill_list.dart';
 import 'package:flutter_rpg/screens/profile/stats_table.dart';
@@ -117,7 +116,7 @@ class Profile extends StatelessWidget {
                     backgroundColor: AppColors.secondaryColor,
                   ));
                 },
-                child: StyledHeading(text: 'Save Character'),
+                child: const StyledHeading(text: 'Save Character'),
               ),
 
               const SizedBox(height: 20.0),
