@@ -66,6 +66,24 @@ class _CreateScreenState extends State<CreateScreen> {
     }
     if (_sloganController.text.trim().isEmpty) {
       // show error dialog
+
+      showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: const StyledHeading(text: 'Missing character slogan'),
+              content: const StyledText(
+                  text: 'Please enter a slogan for your character.'),
+              actions: [
+                StyledButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const StyledHeading(text: 'close'))
+              ],
+              actionsAlignment: MainAxisAlignment.center,
+            );
+          });
       return;
     }
 
